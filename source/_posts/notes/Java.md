@@ -1,30 +1,14 @@
 ---
-title: 'Java'
+title: Java
 date: '2022-2-28 16:31:00'
-description: 世界上最好的语言
-sticky: 2
 tags:
-- Java
-- 编程
+  - Java
+  - 编程
 categories: 编程笔记
-top_img:
-cover:  /img/java.jpg
+cover: /img/java.jpg
+abbrlink: df2849ec
+top_img: "#0f4c81"
 ---
-
-# 第二章
-**什么叫标识符？标识符的规则是什么？false是否可以作为标识符？**
-- 标识符是用来标识包名、类名、方法名、变量名、参数名、数组名、对象名、接口名、文件名的字符序列。标识符由数字、字母、下划线_和符号$组成，第一个字符不能是数字，关键字当作标识符使用，标识符是区分大小写的。
-- Java命名约定如下：
-1. 包名所有字母小写，如com.seehope.web
-2. 类名和接口名可以由多个单词组成，每个单词的首字母大写，如MyClass、HelloWorld、Time等
-2. 方法名、变量名和对象名可以由多个单词组成，第一单词的首字母小写、其余单词的首字母大写，如getName、setTime、myName等。这种命名方法叫做驼峰式命名法。变量命名要尽量做到见名知义，便于理解和阅读。例如，标识符userName，一看便知是‘用户名’。
-- False不能作为标识符
-**什么叫关键字？true 和 false 是否是关键字？请说出六个关键字**
-- 关键字是Java语言中已经被赋予特定含义的一些单词，不能用作标识符，前面见过的class、public、static、void等都是关键字。
-- True和false不是关键字
-- Boolean char double int long float
-
-## 实验
 
 ### 奇偶数判断 
 要求：输入一个数字，输出是奇数还是偶数。
@@ -107,7 +91,8 @@ public class experiment04 {
 }
 ```
 
-## 作业
+
+
 ### 输入一个小写字母输出大写字母
 ```Java
 package chapter2;
@@ -125,7 +110,7 @@ public class experiment1 {
 }
 ```
 
-### 汉字你、我、他、在 Unicode 表中的位置
+### Unicode 表中的位置
 ```Java
 package chapter2; 
 public class experiment2 {
@@ -136,7 +121,7 @@ public static void main(String[] args){
 }
 ```
 
-### 计算几何六边形面积
+### 几何六边形面积
 - 六边形面积可以通过下面公式计算（s 是边长)：(6 * s * s) / (4 * Math.tan(Math.PI / 6))
 ```Java
 package chapter2;
@@ -218,7 +203,7 @@ public class experiment6 {
 }
 ```
 
-### 实现会员注册
+### 会员注册
 - 要求用户名长度不小于 3，密码长度不小于 6，若不满足需有提示信息，提示输入有误；注册时两次输入密码必须相同（字符串）。
 ```Java
 package chapter2;
@@ -241,7 +226,7 @@ public class experiment7 {
 }
 ```
 
-### 输出全部的希腊字母
+### 希腊字母
 ```Java
 package chapter2;
 
@@ -275,7 +260,7 @@ public class experiment9 {
 }
 ```
 
-### 计算输出表达式 12+5>3 || 12-5<7 的值
+### 12+5>3 || 12-5<7 的值
 ```Java
 package chapter2;
 

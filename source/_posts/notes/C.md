@@ -1,17 +1,16 @@
 ---
-title: 'C'
+title: C
 date: '2021-12-13 09:06:00'
-description: 从入门到入土
-sticky: 1
 tags:
-- C
-- 编程
+  - C
+  - 编程
 categories: 编程笔记
-top_img:
-cover:  /img/C.jpg
+cover: /img/C.jpg
+abbrlink: 3dd7ffa7
+top_img: "#0f4c81"
 ---
 
-## 梦的开始
+## Hello,Wrod!
 
 ```C
 #inclued "stdio.h"

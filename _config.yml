@@ -13,8 +13,11 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://yoursite.com
-permalink: :year/:month/:day/:title/
+url: https://nauhz.github.io
+permalink: archives/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -102,9 +105,12 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: https://github.com/NauHz/nauhz.github.io.git
-  branch: master
+  - type: 'git'
+    repo:
+      coding: https://JPUZWxtIfl:f1f98ab1bf2868b8351b22f09512693ab43b370f@e.coding.net/nauhz/blog/myblog.git
+      github: https://github.com/NauHz/nauhz.github.io.git
+    branch: master
+  - type: baidu_url_submitter
 
 search:
   path: search.xml
@@ -117,3 +123,15 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+
+# 主动推送百度，被百度收录
+baidu_url_submit:
+    count: 10 # 提交最新的10个链接
+    host: https://nauhz.github.io # 百度站长平台中注册的域名
+    token: YwgZKmhzkkWkxZaZ # 秘钥，百度站长平台 > 推送接口 > 接口调用地址中token字段
+    path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里，不用改
+
+nofollow:
+  enable: true
+  field: site
+  exclude: ''
