@@ -5,7 +5,7 @@ tags:
   - C
   - 编程
 categories: 编程笔记
-cover: /img/C.jpg
+cover: /img/C.JPG
 abbrlink: 3dd7ffa7
 top_img: "#0f4c81"
 ---

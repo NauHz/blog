@@ -5,7 +5,7 @@ tags:
   - Java
   - 编程
 categories: 编程笔记
-cover: /img/java.jpg
+cover: /img/java.JPG
 abbrlink: df2849ec
 top_img: "#0f4c81"
 ---

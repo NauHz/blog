@@ -107,7 +107,6 @@ theme: butterfly
 deploy:
   - type: 'git'
     repo:
-      coding: https://JPUZWxtIfl:f1f98ab1bf2868b8351b22f09512693ab43b370f@e.coding.net/nauhz/blog/myblog.git
       github: https://github.com/NauHz/nauhz.github.io.git
     branch: master
   - type: baidu_url_submitter
